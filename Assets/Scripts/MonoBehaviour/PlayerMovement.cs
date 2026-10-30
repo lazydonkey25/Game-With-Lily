@@ -2,6 +2,11 @@
 using UnityEngine;
 #endregion
 
+#region Dependencies
+[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Rigidbody2D))]
+#endregion
+
 public class PlayerMovement : MonoBehaviour
 {
     #region Variables
@@ -51,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
         float dy = (boxCollider2D.size.y * transform.localScale.y) / 2;
         float radius = 0.2f;
         float distance = 0.2f;
-        Vector2 origin = new Vector2(transform.position.x, transform.position.y - dy);
+        Vector2 origin = new(transform.position.x, transform.position.y - dy);
         Vector2 direction = Vector2.down;
         LayerMask layerMask = LayerMask.GetMask("Ground");
 
