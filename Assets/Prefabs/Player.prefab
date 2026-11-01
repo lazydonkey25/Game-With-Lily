@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1603343439726747907}
   - component: {fileID: 6535798647551046636}
   - component: {fileID: 8167134683008470825}
+  - component: {fileID: 6515411665825108077}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -76,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1222968625
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: f3bb84bf1c077df4696c1505554fd90c, type: 3}
   m_Color: {r: 0.7056604, g: 0.6168109, b: 0.009320007, a: 1}
@@ -177,3 +178,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &6515411665825108077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826596821705790019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a90bfda2ef8dd4d833d7429c00b9be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayTestInv: 1
+  testInvText: {fileID: 0}
+  itemDatabase: {fileID: 11400000, guid: d9218d06576495944a589e9e528143bd, type: 2}
+  playerInventory:
+    inventoryContents: []

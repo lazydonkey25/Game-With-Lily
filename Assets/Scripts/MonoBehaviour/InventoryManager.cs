@@ -31,8 +31,6 @@ public class InventoryManager : MonoBehaviour
     {
         testInvText.enabled = displayTestInv;
 
-        playerInventory.AddItem(itemDatabase.GetItem("Apple"));
-
         WriteTestInv();
     }
 
@@ -48,9 +46,11 @@ public class InventoryManager : MonoBehaviour
     #region Methods
     private void WriteTestInv()
     {
-        if (displayTestInv)
+        string testInvString = $"{String.Join(",", playerInventory.inventoryContents)}";
+
+        if (displayTestInv && testInvText.text != testInvString)
         {
-            testInvText.text = $"{String.Join(",", playerInventory.inventoryContents)}";
+            testInvText.text = testInvString;
         }
     }
     #endregion
